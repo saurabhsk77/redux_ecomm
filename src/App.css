@@ -7,6 +7,91 @@
   pointer-events: none;
 }
 
+.logo {
+  float: left;
+  margin: 0;
+  padding: 20px;
+}
+
+.cart_header {
+  width: 100%;
+  height: 8vh;
+  background-color: rgb(127, 140, 255);
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart_header img {
+  width: 40px;
+  height: 30px;
+  float: right;
+  margin: 20px;
+}
+
+.cart_header span {
+  position: relative;
+  float: right;
+  top: 3px;
+  right: -15px;
+  font-size: 25px;
+  color: red;
+  font-weight: bolder;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: "20px";
+  justify-content: center;
+}
+
+.product_item {
+  width: auto;
+  margin: 20px;
+  border: 2px solid red;
+  border-radius: 8px;
+  box-shadow: 5px 5px 8px blue;
+  transition: 0.5s linear;
+}
+.product_item:hover {
+  transform: scale(1.1);
+}
+.product_item button {
+  margin: 10px;
+  background-color: pink;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 20px;
+  color: red;
+  font-size: 20px;
+}
+
+.searchbox {
+  margin: 20px;
+  width: 300px;
+  height: 30px;
+  text-align: initial;
+  border: 2px solid red;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.cart_row {
+  display: flex;
+  justify-content: center;
+}
+.breadcrumb {
+  float: left;
+  padding: 20px;
+  color: red;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
